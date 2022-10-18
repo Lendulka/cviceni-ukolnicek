@@ -15,8 +15,8 @@ body {
 
 .todo {
   background-color: white;
-  color: #777;
-  max-width: 20rem;
+  color: #444;
+  max-width: 30rem;
   margin: 4rem auto;
   padding-bottom: 1rem;
   border-radius: 5px;
@@ -25,6 +25,10 @@ body {
 
 .todo__header {
   padding: 2rem;
+}
+
+.todo__filter {
+  padding: 1rem 2rem;
 }
 
 .date {
@@ -86,5 +90,24 @@ body {
 }
 
 .task {
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.task:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.task__done {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.task__due {
+  margin-top: 0.25rem;
+  color: #777;
+  font-size: 0.8rem;
 }
