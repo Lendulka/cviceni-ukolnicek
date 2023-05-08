@@ -28,7 +28,6 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/tasks-api/tasks')
 
 const checkBoxElm = document.querySelector('#checkbox-undone')
 checkBoxElm.addEventListener('change', (event) => {
-    event.preventDefault()
     if (event.target.checked === true) {
         console.log('checked')
         fetch('https://apps.kodim.cz/daweb/trening-api/apis/tasks-api/tasks?done=false')
